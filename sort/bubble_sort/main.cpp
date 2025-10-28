@@ -19,13 +19,31 @@ void bubble_sort(vector<int> &arr) {
     }
 }
 
-
+void descending_bubble_sort(vector<int> &arr) {
+    for (int i = 0; i < arr.size() - 1; i++) {
+        for (int j = 0; j < arr.size() - 1; j++){
+            if (arr[j] < arr[j+1]) {
+                int t = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = t;
+            }
+        }
+    }
+}
 
 int main() {
     vector<int> arr = {9, 3, 7, 1, 5, 2, 8, 4};
 
     bubble_sort(arr);
 
+    cout << "Bubble sort:" << endl;
+    for (int i = 0; i < arr.size(); i++) {
+        cout << arr[i] << " ";
+    }
+
+    descending_bubble_sort(arr);
+
+    cout << "\nDescending bubble sort:" << endl;
     for (int i = 0; i < arr.size(); i++) {
         cout << arr[i] << " ";
     }
