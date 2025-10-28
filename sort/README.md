@@ -1,16 +1,6 @@
 # Các loại sắp xếp
 
 1. Bubble Sort (Sắp xếp nổi bọt)
-
-Mã giả:
-
-```pseudocode
-for i from 1 to n:
-    for j from 0 to n-1:
-        if a[j] > a[j+1]
-            swap(a[j], a[j+1])
-```
-
 2. Selection Sort (Sắp xếp chọn)
 3. Insertion Sort (Sắp xếp chèn)
 4. Merge Sort (Sắp xếp trộn)
