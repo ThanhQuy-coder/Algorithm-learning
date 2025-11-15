@@ -9,6 +9,11 @@ void print(vector<int> &a) {
     cout << "\n";
 }
 
+/**
+ * @param a - danh sách phần tử cần sắp xếp
+ * @param holePosition - Vị trí trống
+ * @param valueToInsert - Giá trị cần chèn
+ */
 void insertion_sort(vector<int> &a){  
     for (int i = 1; i < a.size(); i++){
         int holePosition = i;
@@ -49,5 +54,7 @@ int main() {
 
     print(array);
 
+    string enter;
+    cin >> enter;
     return 0;
 }
