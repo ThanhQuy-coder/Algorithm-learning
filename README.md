@@ -27,5 +27,5 @@ Kho bài tập thuật toán cơ bản và phổ biến dành cho lập trình v
 2. Mở bằng IDE yêu thích (VS Code, CLion, v.v.)
 3. Chạy thử từng bài toán trong thư mục tương ứng.
 
-##💡 Đóng góp:
+## 💡 Đóng góp:
 Nếu bạn có bài toán hay hoặc cách giải mới, hãy mở pull request hoặc issue để cùng phát triển repo này nhé!
