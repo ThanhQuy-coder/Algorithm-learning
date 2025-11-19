@@ -7,7 +7,7 @@ using namespace std;
  * * Cho i chạy từ 1 đến n:
  * *      Cho space chạy từ 0 đến n - i:
  * *          In khoảng trắng;
- * *      Cho j chạy từ 1 đến khi j < i + 1:
+ * *      Cho j chạy từ 1 đến khi j > i + 1:
  * *          In j và khoảng trắng phía sau
  * *      In xuống dòng
  * 
