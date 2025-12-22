@@ -66,6 +66,24 @@ class Solution {
             }
             return {};
         }
+
+        // * One-pass hash table - Nhưng được tối ưu tốt nhất
+        vector<int> TwoSum(vector<int>& nums, int target) {
+            unordered_map<int,int> hash;
+            int complements = 0; // Khai báo ngoài vòng lặp
+            for (int i = 0 ; i < nums.size() ; i++) {
+                complements = target - nums[i];
+
+                // Sử dụng count thay vì find vì sẽ giúp tìm kiếm nhanh hơn
+                // .count(): Tìm kiếm có khóa hay không. Ví dụ .count(2) => true/false // Có hoặc không khóa 2
+                // .find(): Tìm kiếm khóa và trả kèm them giá trị. Ví dụ: .find(2) => {2,0} // khóa 2 có giá trị 0
+                if (hash.count(complements)) return {hash[complements], i}; 
+
+
+                hash[nums[i]] = i;
+            }
+            return {};
+        }
 };
 
 void print(vector<int>& nums) {
@@ -89,6 +107,7 @@ int main() {
     cout << "1. Brute Force" << endl;
     cout << "2. Two-pass hash table" << endl;
     cout << "3. One-pass hash table" << endl;
+    cout << "4. One-pass hash table Ultimate" << endl;
     cout << "--> "; cin >> choice;
 
     switch(choice) {
@@ -102,6 +121,10 @@ int main() {
             break;
         case 3:
             result = solution.TwoSum3(nums, target);
+            print(result);
+            break;
+        case 4:
+            result = solution.TwoSum(nums, target);
             print(result);
             break;
         default:
