@@ -4,24 +4,23 @@ using namespace std;
 
 /**
  * * Mã giả
-    Thuật toán QuickSort(A, left, right):
-    Nếu left >= right:
-        Dừng (mảng con có 0 hoặc 1 phần tử)
-
-    Chọn pivot từ A (có thể là phần tử giữa, ngẫu nhiên, hoặc median-of-three)
-
-    Khởi tạo i = left, j = right
-
-    Trong khi i <= j:
-        - Di chuyển i sang phải cho đến khi A[i] >= pivot
-        - Di chuyển j sang trái cho đến khi A[j] <= pivot
-        - Nếu i <= j:
-            Hoán đổi A[i] và A[j]
-            Tăng i, giảm j
-
-    Gọi QuickSort(A, left, j)   // sắp xếp nửa bên trái
-    Gọi QuickSort(A, i, right)  // sắp xếp nửa bên phải
-
+  **  Thuật toán QuickSort(A, left, right):
+  **  Nếu left >= right:
+  **      Dừng (mảng con có 0 hoặc 1 phần tử)
+**
+  **  Chọn pivot từ A (có thể là phần tử giữa, ngẫu nhiên, hoặc median-of-three)
+**
+  **  Khởi tạo i = left, j = right
+**
+  **  Trong khi i <= j:
+  **      - Di chuyển i sang phải cho đến khi A[i] >= pivot
+  **      - Di chuyển j sang trái cho đến khi A[j] <= pivot
+  **      - Nếu i <= j:
+  **          Hoán đổi A[i] và A[j]
+  **          Tăng i, giảm j
+**
+  **  Gọi QuickSort(A, left, j)   // sắp xếp nửa bên trái
+  **  Gọi QuickSort(A, i, right)  // sắp xếp nửa bên phải
  */
 
  void print(vector<int> &a) {
