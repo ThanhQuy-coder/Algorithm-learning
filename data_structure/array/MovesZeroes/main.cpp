@@ -18,7 +18,7 @@ void solution(vector<int>& arr) {
 
     int* pj = pi + 1;
 
-    while ((pj - &arr[0]) < arr.size()) {
+    while ((pj - &arr[0]) < n) {
         if (*pj != 0) {
             // Swap giá trị mà con trỏ pi và pj đang giữ
             swap(*pi, *pj);
