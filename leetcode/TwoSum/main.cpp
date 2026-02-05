@@ -86,6 +86,7 @@ class Solution {
         }
 };
 
+// Hàm hiển thị phần tử trong mảng
 void print(vector<int>& nums) {
     cout << "\nResult: ";
     if (nums.empty()) {
